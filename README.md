@@ -1,33 +1,12 @@
+# README Generator
 
-  # adf
+## Description
+I made a README Generator. READMEs are important because they can show users how to install and use the app before they download it. It can be used to decide whether they have the right specs on the computer and if the app is right for them. It also allows employers to know that you, their employee, knows what you are doing. 
 
-  ![badge](https://img.shields.io/badge/license-MIT-green)
+I learned how to reference functions within functions and how to use inquirer.
 
-  ## Description
-  adf
+## Video Walkthrough
+![Video Walkthrough](https://drive.google.com/file/d/1amWe-6qrGzOxq7z3q3jMgz8rFGjEawa_/view)
 
-  ## Table of Contents
-- [Installation](#installation)
-- [Usage](#usage)
-- [How to Contribute](#how-to-contribute)
-- [Tests](#tests)
-- [Questions?](#questions?)
-
-## Installation
-  adf
-
-## Usage
-  adsf
-
-## How to Contribute 
-  adf
-
-## Tests
-  adf
-
-## Questions?
-If you have any questions, you can message me at adf
-OR email me at adf.
-
-## License
-[MIT](https://choosealicense.com/licenses/mit/)
+## Link
+<a href="https://aurorabrynn.github.io/readme-generator/">Github Link</a>
