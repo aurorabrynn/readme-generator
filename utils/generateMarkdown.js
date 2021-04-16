@@ -1,58 +1,104 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
+const renderTitle = title => {
+  return `# ${title}`
+}
+
+// Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-function renderLicenseBadge(license) {
-  if (!license) {
+const renderLicenseBadge = license => {
+  if (license === "None") {
     return "";
   } else {
-
+    return `![badge](https://img.shields.io/badge/license-${license}-green)`
   }
 }
 
-// TODO: Create a function that returns the license link
+const renderDescription = description => {
+  return `## Description
+  ${description}`
+}
+
+const renderInstallation = installation => {
+  return `## Installation
+  ${installation}`
+}
+
+const renderUsage = usage => {
+  return `## Usage
+  ${usage}`
+}
+
+const renderContributing = contributing => {
+  return `## How to Contribute 
+  ${contributing}`
+}
+
+const renderTests = tests => {
+  return `## Tests
+  ${tests}`
+}
+
+const renderGithub = github => {
+  return `${github}`
+}
+
+const renderEmail = email => {
+  return `${email}`
+}
+// Create a function that returns the license link
 // If there is no license, return an empty string
-function renderLicenseLink(license) {
-  if (!license) {
+const renderLicenseLink = license => {
+  if (license === "None") {
     return "";
-  } else {
-    
+  } else if (license === "MIT") {
+    return "[MIT](https://choosealicense.com/licenses/mit/)";
+  } else if (license === "Apache") {
+    return "[Apache](https://choosealicense.com/licenses/apache-2.0/)";
+  } else if (license === "GPL") {
+    return "[GPL](https://choosealicense.com/licenses/gpl-3.0/)";
   }
 }
 
-// TODO: Create a function that returns the license section of README
+// Create a function that returns the license section of README
 // If there is no license, return an empty string
-function renderLicenseSection(license) {
-  if (!license) {
+const renderLicenseSection = license => {
+  if (license === "None") {
     return "";
   } else {
-    
+    return `## License`
   }
 }
 
-// TODO: Create a function to generate markdown for README
-function generateMarkdown(data) {
-  return `# ${data.title}
+// Create a function to generate markdown for README
+const generateMarkdown = (data) => {
+  return `
+  ${renderTitle(data.title)}
 
-    ## Description
-    ${data.description}
+  ${renderLicenseBadge(data.license)}
 
-    ## Installation
-    ${data.installation}
+  ${renderDescription(data.description)}
 
-    ## Usage
-    ${data.usage}
+  ## Table of Contents
+- [Installation](#installation)
+- [Usage](#usage)
+- [How to Contribute](#how-to-contribute)
+- [Tests](#tests)
+- [Questions?](#questions?)
 
-    ## License
-    ${data.license}
+${renderInstallation(data.installation)}
 
-    ## How to Contribute
-    ${data.contribute}
+${renderUsage(data.usage)}
 
-    ## Tests
-    ${data.tests}
+${renderContributing(data.contributing)}
 
-    ## Questions?
-    ${data.question}
-    `
+${renderTests(data.tests)}
+
+## Questions?
+If you have any questions, you can message me at ${renderGithub(data.github)}
+OR email me at ${renderEmail(data.email)}.
+
+${renderLicenseSection(data.license)}
+${renderLicenseLink(data.license)}
+`
 }
 
 module.exports = generateMarkdown;
