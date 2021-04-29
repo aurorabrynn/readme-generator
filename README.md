@@ -6,7 +6,7 @@ I made a README Generator. READMEs are important because they can show users how
 I learned how to reference functions within functions and how to use inquirer.
 
 ## Video Walkthrough
-![Video Walkthrough](https://drive.google.com/file/d/1amWe-6qrGzOxq7z3q3jMgz8rFGjEawa_/view)
+<a href=https://drive.google.com/file/d/1amWe-6qrGzOxq7z3q3jMgz8rFGjEawa_/view>Video Walkthrough</a>
 
 ## Link
 <a href="https://aurorabrynn.github.io/readme-generator/">Github Link</a>
